@@ -1,0 +1,123 @@
+:root {
+    --main-color: #102C57;
+    --secondary-color: #F8F0E5;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Sacramento', cursive;
+    overflow-x: hidden;
+}
+
+#navbar {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1rem;
+    transition: text-indent 0.5s ease-in-out;
+}
+
+a:hover {
+   color: var(--secondary-color);
+   font-weight: bold;
+   text-indent: 10px;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+#welcome-section > p {
+    color: var(--main-color);
+    font-size: 1.75em;
+    font-style: italic;
+}
+
+#projects {
+   text-align: center;
+   background-color: #EADBC8;
+   padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: 75%;
+    object-fit: inherit;
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.project-name {
+    background-color: var(--main-color);
+    width: 50%;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+#contact {
+    background-color: #DAC0A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 2rem;
+}
+
+footer {
+    font-weight: 300;
+    padding: 2rem;
+    background-color: var(--main-color);
+    color: var(--secondary-color); 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
